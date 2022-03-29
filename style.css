@@ -1,0 +1,26 @@
+* {
+    background-color: #ffffff;
+    font-family: Arial, Helvetica;
+}
+
+#title {
+    color:blue;
+}
+
+#icon {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 80px;
+    height: 80px;
+    border: 3px solid blue;
+}
+
+/* h1#title {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    /* width: 80px;
+    height: 80px; */
+    /* border: 3px solid blue;
+} */ 
