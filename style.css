@@ -1,26 +1,160 @@
-* {
-    background-color: #ffffff;
-    font-family: Arial, Helvetica;
-}
-
-#title {
-    color:blue;
-}
-
-#icon {
-    position: absolute;
-    top: 50px;
-    right: 50px;
-    width: 80px;
-    height: 80px;
-    border: 3px solid blue;
-}
-
-/* h1#title {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    /* width: 80px;
-    height: 80px; */
-    /* border: 3px solid blue;
-} */ 
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    cursor: url("http://openweathermap.org/img/w/01d.png"), auto;
+    font-family: "Nunito",sans-serif;
+    background-image: linear-gradient( to right top, #044958, #fff);
+  }
+  
+  .header{
+    text-align: center;
+    padding: 15px 30px;
+    color: #fff; 
+  
+  }
+  
+  .main-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, .3);
+    background: white;
+    background: linear-gradient( to right top, rgba(255, 255, 255, .3), rgba(255, 255, 255, .5));
+  }
+  
+  .review-input{
+    text-align: center;
+    margin: 100px auto;
+  }
+  
+  input[type="submit"]{
+    padding: 15px 30px;
+    background-image: linear-gradient( #6be2fd, #fff);
+    border: none;
+    border-radius: 5px;
+    font-family: "Nunito",sans-serif;
+    font-weight:bold;
+    font-size: 20px;
+    box-shadow: 1px 5px 8px gray;
+  }
+  
+  .input input[type="text"]{
+    width: 600px;
+    height: 55px;
+    padding: 5px 10px;
+    background: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-family: "Nunito",sans-serif;
+    font-weight:bold;
+    font-size: 20px;
+    box-shadow: 1px 5px 8px gray;
+  }
+  
+  .review-input input[type="text"]{
+    width: 600px;
+    height: 55px;
+    padding: 5px 10px;
+    background: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-family: "Nunito",sans-serif;
+    font-weight:bold;
+    font-size: 20px;
+    box-shadow: 1px 5px 8px gray;
+  }
+  
+  .card{
+    width: 50%;
+    background: #FFF;
+    height: 40vh;
+    margin: 50px auto;
+    border-radius: 5px;
+    align-content: center;
+    border-radius: 5px;
+    box-shadow: 1px 5px 8px gray;
+  }
+  
+  .close{
+    float: right;
+    margin-top: -2px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .card h1{
+    padding: 5px 0;
+    text-align: center;
+  }
+  
+  img {
+    align-items: center;
+  }
+  
+  .card img {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #second-image {
+    display: flex;
+      justify-content: center;
+      padding-top: 20px;
+      margin-bottom: -25px;
+  }
+  
+  .card p{
+    text-align: center;
+    margin:40px 0;
+    font-size:20px;
+  }
+  
+  .input{
+    text-align: center;
+    margin: 100px auto;
+  }
+  
+  .input2 input[type="text"]{
+    width: 345px;
+    height: 55px;
+    padding: 5px 10px;
+    background: rgb(255, 255, 255, .85);
+    border: none;
+    border-radius: 5px;
+    font-family: "Nunito",sans-serif;
+    font-weight:bold;
+    font-size: 20px;
+    box-shadow: 1px 5px 8px gray;
+  }
+  
+  .card2-review{
+    width: 50%;
+    /* width: fit-content; */
+    background: rgb(255, 255, 255);
+    height: fit-content;
+    margin: 50px auto;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 5px 8px gray;
+  }
+  
+  .card2-review h1{
+    padding: 5px 0;
+    margin:auto;
+    text-align: center;
+    justify-content: space-around;
+  }
+  
+  .card2-review li{
+    list-style-type: none;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    padding:25px 0;
+    font-size:20px;
+  }

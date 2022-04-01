@@ -1,105 +1,73 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-
-<html>
-    <head>
-        <meta charset = "UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible"content="le=edge">
-        <title>API</title>
-         <link rel="stylesheet" href="style.css">
-    </head>
-
-    <body>
-        <nav class="navbar navbar-dark bg-primary mb-3">
-            <div class="container">
-                <a href="#" class="navbar-brand">World Cities Weather</a>
-            </div>
-        </nav>
-        <div class="containter searchContainer">
-            <div class="search card card-body">
-                <h1>Get the Weather for a Location</h1>
-                <p class="lead">Enter Your Location</p>
-                <input
-                type="text"
-                id="searhcUser"
-                class="form-control"
-                placeholder="location"
-            />
-        </div>
-     </br />
-     <div id="profile"></div>
-     </div>
-     <div class="container text-center mt-2">
-         <button class="btn btn-primary" id="submit">Submit</button>
-    </div>
-
-    <div id="content"></div>
-    <footer class="mt-5 p-3 text-center bg-light">
-        World Cities Weather &copy;
-    </footer>
- </body>
- <script src="fetch.js" ></script>
- <script src="ui.js"></script>
- <script src="app.js"></script>
-=======
-<!-- <html lang="en">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="index.js"></script>
-    <link rel="stylesheet" href="style.css"></link>
-    <title>World Weather App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Second World Cities Weather</title>
+  <!-- <script src="app.js"></script> -->
+  <script src="new.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <div class="current-info">
+<body> 
 
-            <div class="date-container">
-                <div class="time" id="time">
-                    12:30 <span id="am-pm">AM</span>
-                </div>
-
-                <div class="date" id="date">
-                    Tuesday, March 29
-                </div>
-
-                <div class="others" id="current-weather-items">
-                    <div class="weather-item">
-                        <p>Temperature</p>
-                        <p>75°</p>
-                    </div>
-                    <div class="weather-item">
-                        <p>Rain or Sun</p>
-                        <p>20</p>
-                    </div>
-                    <div class="weather-item">
-                        <p>Wind Speed</p>
-                        <p>40MPH</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="place-container">
-                <div class="time-zone" id="time-zone">North America/Texas</div>
-                <div class="location" id="location">Latitude/Longitude</div>
-            </div>
-
-            <div class="future-forecast">
-                <div class="today" id="current-temp">
-                    <img src="" alt="weather icon" class="w-icon">
-                    <div class="day">Sunday</div>
-                    <div class="temp">Day - 80°</div>
-                    <div class="temp">Night - 60°</div>
-                </div>
-
-                <div class="weather-forecast" id="weather-forecast">
-
-                </div>
-            </div>
-        </div>
+<!-- title and main div, contains everything (whole page) -->
+<div class="main">
+    <div class="header">
+      <h1>World Cities Weather</h1>
+      <p>Enter any city name to recieve that cities weather!</p>
+      <div class="header-icon-container">
+        <img src="http://openweathermap.org/img/w/10d.png" alt="weather icon">
+      </div>
     </div>
+
+  <!-- Container that holds all the cards -->
+  <div class="main-container">
+    <div class="input">
+      <!-- location input -->
+      <!-- <form type="submit" id="location-search"> -->
+        <input type="text" placeholder="Enter the city" class="input_location">
+        <input type="submit" value="Submit" class="submit">
+      <!-- </form> -->
+    </div>
+  
+  <!-- Card that contains weather information -->
+  <div id="main-card" class="container">
+    <div class="card main-weather-card">
+      <h1 class="name" id="name">Enter a City</h1>
+      <hr>
+      <div id="second-image">
+        <img src="#" alt="" class="icon-insert" id="icon-insert">
+      </div>
+      <p class="temp">Temperature: ...tbd</p>
+      <p class="desc">Summary: ...tbd</p>
+      <p class="feelLike">Feels Like: ...tbd</p>
+      <p id="wind" class="wind-speed">Wind Speed: ...tbd</p>
+    </div>
+  </div>
+  
+  <!-- Card that contains reviews -->
+  <div id="review-card" class="container">
+    <div class="card2-review">
+      <br>
+      <h2>Reviews</h2>
+      <br>
+      <h4><em>Let us know if the information was accurate!</em></h4>
+      <hr>
+      <br>
+      <h1 class="name2" id="name2"></h1>
+      <ul class="review"></ul>
+    </div>
+  </div>
+  
+  <!-- Review input and button -->
+  <div class="review-input">
+    <!-- <form id="review-form"> -->
+      <input type="text" placeholder="Leave a review!" class="input_review">
+      <input type="submit" placeholder="Submit" class="submit2">
+    <!-- </form> -->
+  </div>
+  
+</div>
 </body>
->>>>>>> e0568430a708e219e608f019f33f2a6193499a17
-</html> -->
+</html>
